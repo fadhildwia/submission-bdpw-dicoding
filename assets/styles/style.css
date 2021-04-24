@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+h1,
+h2 {
+    background-color: rgb(46, 161, 228);
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    letter-spacing: 0.5px;
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #e6e6e6;
+}
+
+nav ul li.active {
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    background: white;
+    padding: 20px;
+    overflow: auto;
+}
+
+.content {
+    width: 70%;
+    height: 100%;
+    padding-right: 20px;
+    float: left;
+}
+
+.content h3 {
+    color: #3282b8;
+}
+
+.content p {
+    color: rgba(0, 0, 0, 0.75);
+    text-align: justify;
+    margin: 0px;
+}
+
+.content .mySlides {
+    width: 80%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .dicoding {
+    border-radius: 1%;
+    box-shadow: 1px 1px 3px 3px #e7e7e7;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.content .information {
+    border-radius: 1%;
+    box-shadow: 1px 1px 3px 3px #e7e7e7;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.biodata {
+    text-align: center;
+    width: 30%;
+    height: 100%;
+    border-radius: 1%;
+    box-shadow: 1px 1px 3px 3px #e7e7e7;
+    padding: 5px;
+    float: left;
+}
+
+.biodata section {
+    padding: 2rem;
+}
+
+.biodata section img {
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside section p {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: #145374;
+    color: white;
+    float: left;
+}
+
+body main article section p {
+    margin-bottom: 15px;
+}
+
+body main article section img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+body main article section ul li {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.75);
+    text-align: justify;
+    margin: 0px;
+    line-height: 1.75rem;
+}
+
+@media screen and (max-width: 800px) {
+    .content,
+    .biodata {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(46, 161, 228);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: rgb(101, 205, 253);
+}
